@@ -50,6 +50,7 @@
     },
     "COUNTRY": {
       "description": "Set your Country to be used in the .time and .date commands.",
+      "value": "ID",
       "required": false
     },
     "TZ_NUMBER": {
