@@ -164,7 +164,7 @@
     }, 
     "GIT_REPO_NAME": {
       "description": "Set the repo for the gitupload module.",
-      "value": "https://github.com/giomahendra/UserButt/”,
+      "value": "https://github.com/giomahendra/UserButt/",
       "required": false
     },
     "GITHUB_ACCESS_TOKEN": {
