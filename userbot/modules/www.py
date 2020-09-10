@@ -22,8 +22,6 @@ async def speed(sp):
     took = time.time() - start
     await sp.edit("`[ Speed ]\n - Took : %.3fms\n - Taken: %.10f`" % (took, elapsed))
 
-@register(outgoing=True, pattern="^.speed$")
-9.share()
 @register(outgoing=True, pattern=r"^\.speed$")
 async def speedtst(spd):
     await spd.edit("`Running speed test . . .`")
