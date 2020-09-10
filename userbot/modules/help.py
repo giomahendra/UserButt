@@ -26,7 +26,7 @@ async def help(event):
             string += "-> %s\n" % str(i) #+ "`"
             #string += "\n-> "
         msg = await event.edit(string)
-    await asyncio.sleep(120)
+    await asyncio.sleep(60)
     try:
         await msg.delete()
     except BaseException:
