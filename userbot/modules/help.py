@@ -29,7 +29,7 @@ async def help(event):
         string2 = "List for all available commands below: "
         string3 = "-------------------------------------------------------------"
         for i in CMD_HELP:
-            string += "`-> " + str(i)
+            string += "-> `" + str(i)
             string += "`\n"
         await event.edit(
             f"{string1}" f"{string2}" f"{string3}\n" f"{string}" f"{string3}"
