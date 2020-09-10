@@ -119,22 +119,27 @@
     },
     "LASTFM_API": {
       "description": "API Key for Last.FM module. [Get one from - https://www.last.fm/api/account/create]",
+      "value": "5160ce3cca0e8bb3f100e4e25dfc3b06",
       "required": false
     },
     "LASTFM_SECRET": {
       "description": "SECRET Key for Last.FM module. [Get one from - https://www.last.fm/api/account/create]",
+      "value": "b133d9af867e240bee77f099aa95fea3",
       "required": false
     },
     "LASTFM_USERNAME": {
       "description": "Last.FM Username",
+      "value": "trojansbot",
       "required": false
     },
     "LASTFM_PASSWORD": {
       "description": "Last.FM Password",
+      "value": "Gio.07101996",
       "required": false
     },
     "BIO_PREFIX": {
       "description": "Prefix for Last.FM Module Bio.",
+      "value": "Trojans Last.fm",
       "required": false
     },
     "DEFAULT_BIO": {
@@ -161,6 +166,7 @@
     },
     "WEATHER_DEFCITY": {
       "description": "Set the default city for the userbot's weather module.",
+      "value": "Jakarta",
       "required": false
     }, 
     "GIT_REPO_NAME": {
@@ -175,6 +181,7 @@
     },
     "GENIUS_API_TOKEN": {
       "description": "Get this value from https://genius.com/developers.",
+      "value": "oYhWPWLwRjfEZvHsnel7hA6cb4ALZsJFf07hjp0aAx1DxfGiJIjxwtvVA0m4qmmg",
       "required": false 
     },
     "TERM_ALIAS": {
