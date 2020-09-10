@@ -25,14 +25,13 @@ async def hep(event):
             await event.delete()
     else:
         string1 = "Please specify which module do you want help for !!\nUsage: .help <module name>\n\n"
-        string = "• "
-        string3 = "List for all available commands below: "
-        string2 = "-------------------------------------------------------------"
+        string2 = "List for all available commands below: "
+        string3 = "-------------------------------------------------------------"
         for i in CMD_HELP:
-            string += "`-> " + str(i)
+            string = "`-> " + str(i)
             string += "`\n"
         await event.edit(
-            f"{string1}" f"{string3}" f"{string2}\n" f"{string}" f"{string2}"
+            f"{string1}" f"{string2}" f"{string3}\n" f"{string}" f"{string3}"
         )
         await asyncio.sleep(60)
         await event.delete()
