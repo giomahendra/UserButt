@@ -1,7 +1,7 @@
 {
-  "name": "Telegram UserButt",
-  "description": "[UserButt] A modular Telegram userbot running on Python 3.7+ with an sqlalchemy database.",
-  "logo": "https://i.ibb.co/KhLWz5P/photo-2020-02-28-22-03-27.jpg",
+  "name": "Trojans",
+  "description": "[ Trojans ] A modular Telegram userbot running on Python 3.7+ with an sqlalchemy database.",
+  "logo": "https://telegra.ph/file/61e6644f3b0a4241d5442.jpg",
   "keywords": [
     "telegram",
     "userbot",
@@ -9,21 +9,24 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/keselekpermen69/userbutt",
+  "repository": "https://github.com/giomahendra/userbutt",
   "website": "https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02",
   "success_url": "https://t.me/userbotindo",
   "stack": "container",
   "env": {
     "API_KEY": {
       "description": "Get this value from my.telegram.org.",
+      "value": "1455158",
       "required": true
     },
     "API_HASH": {
       "description": "Get this value from my.telegram.org.",
+      "value": "580236d423c8bb2c48e6512432f20361",
       "required": true
     },
     "STRING_SESSION": {
       "description": "Get this value by running [python3 string_session.py] in Termux or local system.",
+      "value": "1BVtsOK0BuxbwBmGOTjSQMkRcjB5A-n-LZnIIB22AYdFwjfDTEKV4QLv1-PFqZy-iLUY4c_uiiMRjzQ1Co2XhjcW_BD-7XLgjF2gBnQjzyG0I6Z5bzdF1H4jiHDqg8D1gWIJQko88wioBjdxCqzERayjGOn1SHsGl0cWriJaOLcijufB1yKS5svI4lf7AuDeymD2Z4WmAWZT2EJjPJWPINeHsiiDYt3fCzajOGcIgDJJSX6weyMQNfQS6fSwRYn6W4DSZGFn8Cn1WO9YyYgIFCvjiNUKW1Ft28me5Wdr8Gj3BgjSm_-GjkmuTTlt7XQ3I0X-TW5t_-Fyn3X8a1LnjGUZIIzERTvY=",
       "required": true
     },
     "HEROKU_MEMEZ": {
@@ -33,10 +36,11 @@
     },
     "HEROKU_API_KEY": {
       "description": "Your Heroku API key, get it from 'https://dashboard.heroku.com/account'",
-      "value": ""
+      "value": "0d2cabd6-0881-4655-9afb-348582e80810"
     },
     "HEROKU_APP_NAME": {
       "description": "Enter the Heroku app name here (Must an exact same name with your input above). It helps with userbot updates.",
+      "value": "trojans-tele
       "required": false
     },
     "UPSTREAM_REPO_URL": {
@@ -65,15 +69,16 @@
     },
     "OPEN_WEATHER_MAP_APPID": {
       "description": "Get your own APPID (API key)from https://api.openweathermap.org/data/2.5/weather",
+      "value": "9fd178c4deb2326b72a3889c99e9704f",
       "required": false
     },
     "BOTLOG": {
       "description": "Incase you want to turn off logging, put this to false",
-      "value": "False"
+      "value": "True"
     },
     "BOTLOG_CHATID": {
       "description": "ChatID of the Log group. Create a Group > add a bot e.g. @MissRose_bot > Promote bot > type /id.",
-      "value": "0"
+      "value": "-497601959"
     },
     "CONSOLE_LOGGER_VERBOSE": {
       "description": "If you need verbosity on the console logging",
@@ -138,6 +143,7 @@
     },
     "ALIVE_NAME": {
       "description": "Name to show in .alive message",
+      "value": "STOPPED WORKING !",
       "required": false
     },
     "G_DRIVE_CLIENT_SECRET": {
@@ -158,10 +164,12 @@
     }, 
     "GIT_REPO_NAME": {
       "description": "Set the repo for the gitupload module.",
+      "value": "https://github.com/giomahendra/UserButt/”,
       "required": false
     },
     "GITHUB_ACCESS_TOKEN": {
       "description": "Set this in order to make the gitupload work. you can look https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line to assist you.",
+      "value": "69286425e09e1c1babb4a508159e5ad857bf77f8",
       "required": false
     },
     "GENIUS_API_TOKEN": {
@@ -174,7 +182,7 @@
     },  	
     "LOGSPAMMER": {
       "description": "Set this to True in case you want the error logs to be stored in the userbot log group, instead of spitting out the file in the current chat, requires a valid BOTLOG_CHATID to be set.",
-      "value": "False"
+      "value": "True"
     },
     "DEEZER_ARL_TOKEN": {
       "description": "Input your DEEZER ARL TOKEN https://notabug.org/RemixDevs/DeezloaderRemix/wiki/Login+via+userToken",
@@ -182,6 +190,7 @@
     },
     "ALIVE_LOGO": {
       "description": "Show Image/Logo in .alive message. the value MUST A DIRECT LINK to the photo unless it'll crash!!",
+      "value": "https://telegra.ph/file/61e6644f3b0a4241d5442.jpg",
       "required": false
     },
     "BOT_TOKEN": {
