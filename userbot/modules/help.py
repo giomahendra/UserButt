@@ -12,7 +12,7 @@ from userbot.events import register
 
 
 @register(outgoing=True, pattern="^help(?: |$)(.*)")
-async def hep(event):
+async def help(event):
     args = event.pattern_match.group(1).lower()
     if args:
         if args in CMD_HELP:
