@@ -26,7 +26,7 @@
     },
     "STRING_SESSION": {
       "description": "Get this value by running [python3 string_session.py] in Termux or local system.",
-      "value": "1BVtsOK0BuxbwBmGOTjSQMkRcjB5A-n-LZnIIB22AYdFwjfDTEKV4QLv1-PFqZy-iLUY4c_uiiMRjzQ1Co2XhjcW_BD-7XLgjF2gBnQjzyG0I6Z5bzdF1H4jiHDqg8D1gWIJQko88wioBjdxCqzERayjGOn1SHsGl0cWriJaOLcijufB1yKS5svI4lf7AuDeymD2Z4WmAWZT2EJjPJWPINeHsiiDYt3fCzajOGcIgDJJSX6weyMQNfQS6fSwRYn6W4DSZGFn8Cn1WO9YyYgIFCvjiNUKW1Ft28me5Wdr8Gj3BgjSm_-GjkmuTTlt7XQ3I0X-TW5t_-Fyn3X8a1LnjGUZIIzERTvY=",
+      "value": "1BVtsOKsBu5Bcn62qfziXL8UVrS7eK_DO15-uaDceoBpa9xjtKjlI8-s_uS-VKVYvXvlAgRyWBASGZ8brsxPR6ikkiApGegSPfkcwTmaWaampE8QHsGgfM20KqTWjngLWhU9nNDjTSt6sS6BPUcW9iUrkA3UeyLEHIE-MU3avKO69be5mwnpBqASlyL-bwLRWX4odgfUwzTdB3VrpQs1GIQQYibP9bW3_LyZ-vTthF3wz2w7C0EnKm8-w93Kbc08MStlcsfMnLx2EFMO48yRMAQC7lChS-pf3RTLfuh_egpxv0JeNFvWtv25z5s0J8PGZm-f2HI7XC97_zzq3tcomOhNIXTviymg=",
       "required": true
     },
     "HEROKU_MEMEZ": {
