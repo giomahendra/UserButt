@@ -42,7 +42,7 @@ async def evaluate(query):
                     remove("output.txt")
                     return
                 await query.edit("**Query: **\n`"
-                                 f"{expression}"
+                                 f"{expression}\n"
                                  "`\n**Result: **\n`"
                                  f"{evaluation}"
                                  "`")
@@ -107,8 +107,8 @@ async def run(run_q):
             )
             remove("output.txt")
             return
-        await run_q.edit("**Query: **\n`"
-                         f"{codepre}"
+        await run_q.client.send_message(BOTLOG_CHATID, "**Query: **\n`"
+                         f"{codepre}\n"
                          "`\n**Result: **\n`"
                          f"{result}"
                          "`")
@@ -117,10 +117,10 @@ async def run(run_q):
             "**Query: **\n`" f"{codepre}" "`\n**Result: **\n`No result returned/False`"
         )
 
-    if BOTLOG:
-        await run_q.client.send_message(
-            BOTLOG_CHATID, "Exec query " + codepre + " was executed successfully."
-        )
+#    if BOTLOG:
+#        await run_q.client.send_message(
+#            BOTLOG_CHATID, "Exec query " + codepre + " was executed successfully."
+#        )
 
 
 @register(outgoing=True, pattern=r"^\.term(?: |$|\n)(.*)")
