@@ -179,9 +179,10 @@ async def bot_ver(event):
             comout = str(stdout.decode().strip()) \
                 + str(stderr.decode().strip())
 
-        await event.edit(f"`Userbot Version: {verout}`\n"
-                         f"`Revision: {revout}`\n"
-                         f"`Latest commit: {comout}`")
+        await event.edit(
+                         f"`Revision               : {revout}`\n"
+                         f"`Latest commit   : {comout}`"
+                         f"`Userbot Version : {verout}`\n")
     else:
         await event.edit(
             "Shame that you don't have git, You're running 9.0 - 'Extended' anyway"
@@ -297,7 +298,7 @@ CMD_HELP.update({
     "pip": "`.pip` <module(s)>"
     "\nUsage: Does a search of pip modules(s)."})
 CMD_HELP.update({
-    "on":
+    "alive":
     "`.alive` | `.on`"
     "\nUsage: See wether your bot is working or not."
     "\n\n`.aliveu` <text>"
