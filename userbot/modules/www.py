@@ -17,10 +17,11 @@ import time
 @register(outgoing=True, pattern="^.sp$")
 async def speed(sp):
     start = time.time()
-    await pong.edit("`Checking Speed. . .`")
+    await sp.edit("`Checking Speed. . .`")
     elapsed = time.time() - start
     took = time.time() - start
-    await pong.edit("`[ Speed ]\n - Took : %.3fms\n - Taken: %.10f`" % (took, elapsed))
+    await sp.edit("`[ Speed ]\n - Took : %.3fms\n - Taken: %.10f`" % (took, elapsed))
+
 @register(outgoing=True, pattern="^.speed$")
 async def speedtst(spd):
     """For .speed command, use SpeedTest to check server speeds."""
