@@ -25,7 +25,7 @@ async def help(event):
             await event.delete()
     else:
         string = ""
-        string1 = "Please specify which module do you want help for !!\nUsage: .help <module name>\n\n"
+        string1 = "Please specify which module do you want help for !!\nUsage: help <module name>\n\n"
         string2 = "List for all available commands below: "
         string3 = "-------------------------------------------------------------"
         for i in CMD_HELP:
