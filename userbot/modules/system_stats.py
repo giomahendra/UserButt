@@ -8,6 +8,7 @@
 import asyncio
 import platform
 import sys
+import time
 from asyncio import create_subprocess_exec as asyncrunapp
 from asyncio.subprocess import PIPE as asyncPIPE
 from datetime import datetime
@@ -27,6 +28,7 @@ from userbot.events import register
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 repo = Repo()
 modules = CMD_HELP
+StartTime = time.time()
 # ============================================
 
 
@@ -208,15 +210,17 @@ async def pipcheck(pip):
 @register(outgoing=True, pattern=r"^\.(?:alive|on)\s?(.)?")
 async def amireallyalive(alive):
     """For .alive command, check if the bot is running."""
-    output = ("`At your services...`\n"
-              "`=================================`\n"
-              f"👤 `User        :` {DEFAULTUSER}\n"
-              f"🐍 `Python      :` v{python_version()}\n"
-              f"⚙️ `Telethon    :` v{version.__version__}\n"
-              "`---------------------------------\n`"
-              f"🛠 `Running on  :` {repo.active_branch.name}\n"
-              f"🧩 `Loaded modules :` {len(modules)}\n"
-              "`=================================`")
+    uptime = await get_readable_time((time.time() - StartTime))
+    output = ("`Bot services is running...`\n"
+              "`==================================`\n"
+              f"-> 👤 `User        :` {DEFAULTUSER}\n"
+              f"-> 🐍 `Python      :` v{python_version()}\n"
+              f"-> ⚙️ `Telethon    :` v{version.__version__}\n"
+              "`----------------------------------\n`"
+              f"-> 🛠 `Running on  :` {repo.active_branch.name}\n"
+              f"-> 🧩 `Loaded modules :` {len(modules)}\n"
+              f"-> 🕒 `Bot Uptime  : {uptime} `\n"
+              "`==================================`")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
