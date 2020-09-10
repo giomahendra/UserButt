@@ -24,7 +24,7 @@ async def speed(sp):
 
 @register(outgoing=True, pattern=r"^\.speed$")
 async def speedtst(spd):
-    await spd.edit("`Running speed test . . .`")
+    await spd.edit("`Running speed test. . .`")
     test = Speedtest()
 
     test.get_best_server()
@@ -34,20 +34,20 @@ async def speedtst(spd):
     result = test.results.dict()
 
     output = f"Started at `{result['timestamp']}`\n\n"
-    output += "`Client:`\n"
-    output += f"ISP: `{result['client']['isp']}`\n"
-    output += f"Country: `{result['client']['country']}`\n\n"
-    output += "`Server:`\n"
-    output += f"Name: `{result['server']['name']}`\n"
-    output += f"Country: `{result['server']['country']}, {result['server']['cc']}`\n"
-    output += f"Sponsor: `{result['server']['sponsor']}`\n"
-    output += f"Latency: `{result['server']['latency']}`\n\n"
-    output += "`Speed:`\n"
-    output += f"Ping: `{result['ping']}`\n"
-    output += f"Download: `{speed_convert(result['download'])}`\n"
-    output += f"Upload: `{speed_convert(result['upload'])}` "
-    await spd.delete()
-    await spd.client.send_message(spd.chat_id, output)
+    output += "`Client`\n"
+    output += f"ISP      : `{result['client']['isp']}`\n"
+    output += f"Country  : `{result['client']['country']}`\n\n"
+    output += "`Server`\n"
+    output += f"Name     : `{result['server']['name']}`\n"
+    output += f"Country  : `{result['server']['country']}, {result['server']['cc']}`\n"
+    output += f"Sponsor  : `{result['server']['sponsor']}`\n"
+    output += f"Latency  : `{result['server']['latency']}`\n\n"
+    output += "`Speed`\n"
+    output += f"Ping     : `{result['ping']}`\n"
+    output += f"Download : `{speed_convert(result['download'])}`\n"
+    output += f"Upload   : `{speed_convert(result['upload'])}` "
+    await spd.edit(output)
+    #await spd.client.send_message(spd.chat_id, output)
 
 
 def speed_convert(size):
