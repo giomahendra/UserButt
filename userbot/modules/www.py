@@ -11,6 +11,7 @@ from speedtest import Speedtest
 from telethon import functions
 from userbot import CMD_HELP
 from userbot.events import register
+import time
 
 
 @register(outgoing=True, pattern="^.sp$")
