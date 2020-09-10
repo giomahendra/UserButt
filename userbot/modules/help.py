@@ -11,7 +11,7 @@ from userbot import CMD_HELP
 from userbot.events import register
 
 
-@register(outgoing=True, pattern="^.help(?: |$)(.*)")
+@register(outgoing=True, pattern="^help(?: |$)(.*)")
 async def help(event):
     """For .help command"""
     args = event.pattern_match.group(1).lower()
@@ -26,8 +26,8 @@ async def help(event):
             string += "`" + str(i) + "`"
             string += "- \n"
         msg = await event.edit(string)
-    await asyncio.sleep(45)
-    try:
-        await msg.delete()
-    except BaseException:
-        return  # just in case if msg deleted first
+    #await asyncio.sleep(45)
+    #try:
+        #await msg.delete()
+    #except BaseException:
+        #return  # just in case if msg deleted first
