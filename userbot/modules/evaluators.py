@@ -108,7 +108,7 @@ async def run(run_q):
             remove("output.txt")
             return
         await run_q.client.send_message(BOTLOG_CHATID,
-                         "`**Result: **\n`"
+                         "**Result : **\n`"
                          f"{result}"
                          "`")
 #                         "**Query: **\n`"
