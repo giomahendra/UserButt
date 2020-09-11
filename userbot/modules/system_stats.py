@@ -21,7 +21,7 @@ from telethon import __version__, version
 from git import Repo
 
 from telethon.errors.rpcerrorlist import MediaEmptyError
-from userbot import CMD_HELP, ALIVE_NAME, ALIVE_LOGO, bot
+from userbot import CMD_HELP, ALIVE_NAME, ALIVE_LOGO, BOT_VERSION, bot
 from userbot.events import register
 
 # ================= CONSTANT =================
@@ -246,6 +246,7 @@ async def amireallyalive(alive):
               "`----------------------------------\n`"
               f"-> 🛠 `Running on     :` {repo.active_branch.name}\n"
               f"-> 🧩 `Loaded modules :` {len(modules)}\n"
+              f"-> 🤖 Bot Version    : v{USERBOT_VERSION}\n"
               f"-> 🕒 `Bot Uptime     : {uptime} `\n"
               "`==================================`")
     if ALIVE_LOGO:
