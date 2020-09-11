@@ -5,7 +5,7 @@
 #
 """Userbot module for executing code and terminal commands from Telegram."""
 
-import asyncio
+import requests, json, asyncio
 from os import remove
 from sys import executable
 from userbot import CMD_HELP, BOTLOG, BOTLOG_CHATID, TERM_ALIAS
