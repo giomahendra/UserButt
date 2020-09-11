@@ -246,8 +246,8 @@ async def amireallyalive(alive):
               "`----------------------------------\n`"
               f"-> 🛠 `Running on     :` {repo.active_branch.name}\n"
               f"-> 🧩 `Loaded modules :` {len(modules)}\n"
-              f"-> 🤖 Bot Version    : v{USERBOT_VERSION}\n"
-              f"-> 🕒 `Bot Uptime     : {uptime} `\n"
+              f"-> 🤖 `Bot Version    :` v{BOT_VERSION}\n"
+              f"-> 🕒 `Bot Uptime     :` {uptime}\n"
               "`==================================`")
     if ALIVE_LOGO:
         try:
