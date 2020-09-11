@@ -440,8 +440,8 @@ async def lang(value):
         await value.client.send_message(
             BOTLOG_CHATID,
             f"`Language for {scraper} changed to {LANG.title()}.`")
-            await sleep(30)
-            await value.delete()
+        await sleep(30)
+        await value.delete()
 
 
 @register(outgoing=True, pattern=r"^\.yt (\d*) *(.*)")
