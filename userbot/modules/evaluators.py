@@ -5,7 +5,7 @@
 #
 """Userbot module for executing code and terminal commands from Telegram."""
 
-import requests, json, asyncio
+import asyncio
 from os import remove
 from sys import executable
 from userbot import CMD_HELP, BOTLOG, BOTLOG_CHATID, TERM_ALIAS
@@ -65,6 +65,7 @@ async def evaluate(query):
 @register(outgoing=True, pattern=r"^\.exec(?: |$|\n)([\s\S]*)")
 async def run(run_q):
     """For .exec command, which executes the dynamically created program"""
+    import requests, json
     code = run_q.pattern_match.group(1)
 
     if run_q.is_channel and not run_q.is_group:
