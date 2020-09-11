@@ -36,7 +36,7 @@ def runtime(secs):
 async def speed(rt):
     await rt.edit("`Checking program running. . .`")
     eltime = time.time() - programStart
-    await rt.edit("`⋄ Runtime :\n   ☣️ %s`" % (runtime(eltime)))
+    await rt.edit("`⋄ Runtime :\n  ☣️ %s`" % (runtime(eltime)))
 
 @register(outgoing=True, pattern="^.sp$")
 async def speed(sp):
