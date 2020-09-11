@@ -157,7 +157,7 @@ TEMP_DOWNLOAD_DIRECTORY = os.environ.get(
     "TMP_DOWNLOAD_DIRECTORY") or "./downloads"
 
 # Terminal alias
-TERM_ALIAS = os.environ.get("TERM_ALIAS") or "UserButt"
+TERM_ALIAS = os.environ.get("TERM_ALIAS") or "Trojans"
 
 # Zipfile module
 ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY") or "./zips"
@@ -263,7 +263,7 @@ with bot:
         @tgbot.on(events.NewMessage(pattern="/start"))
         async def handler(event):
             if event.message.from_id != uid:
-                await event.reply("I'm [UserButt](https://github.com/KeselekPermen69/userbutt) modules helper...\nplease make your own bot, don't use mine 😋")
+                await event.reply("I'm [Trojans](https://github.com/gionahendra/userbutt) modules helper...\nplease make your own bot, don't use mine 😋")
             else:
                 await event.reply(f"`Hey there {ALIVE_NAME}\n\nI work for you :)`")
 
@@ -272,12 +272,12 @@ with bot:
             builder = event.builder
             result = None
             query = event.text
-            if event.query.user_id == uid and query.startswith("@UserButt"):
+            if event.query.user_id == uid and query.startswith("@Trojans"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.article(
                     "Please Use Only With .help Command",
                     text="{}\nTotal loaded modules: {}".format(
-                        "UserButt modules helper.\n",
+                        "Trojans modules helper.\n",
                         len(dugmeler),
                     ),
                     buttons=buttons,
@@ -291,13 +291,13 @@ with bot:
                     link_preview=True)
             else:
                 result = builder.article(
-                    "UserButt",
+                    "Repositories",
                     text="""You can convert your account to bot and use them. Remember, you can't manage someone else's bot! All installation details are explained from GitHub address below.""",
                     buttons=[
                         [
                             custom.Button.url(
                                 "GitHub Repo",
-                                "https://github.com/KeselekPermen69/userbutt"),
+                                "https://github.com/giomahendra/userbutt"),
                             custom.Button.url(
                                 "Support",
                                 "https://t.me/UserBotIndo")],
@@ -354,7 +354,7 @@ with bot:
                 if len(cmdhel) > 150:
                     help_string = (
                         str(CMD_HELP[modul_name]).replace('`', '')[:150] + "..."
-                        + "\n\nRead more .help "
+                        + "\n\nRead more help "
                         + modul_name
                         + " "
                     )
