@@ -169,6 +169,8 @@ DEEZER_ARL_TOKEN = os.environ.get("DEEZER_ARL_TOKEN") or None
 BOT_TOKEN = os.environ.get("BOT_TOKEN") or None
 BOT_USERNAME = os.environ.get("BOT_USERNAME") or None
 
+# Version of UserButt
+BOT_VERSION = os.environ.get("BOT_VERSION") or "2.8"
 
 # Setting Up CloudMail.ru and MEGA.nz extractor binaries,
 # and giving them correct perms to work properly.
