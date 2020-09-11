@@ -422,7 +422,7 @@ async def lang(value):
             LANG = LANGUAGES[arg]
         else:
             return await value.edit(
-                f"`Invalid Language code !!`\n`Available language codes for TRT`:\n\n`{LANGUAGES}`"
+                f"`Invalid Language code !!`\n`Available language codes for TRT`:\n\n`{json.dumps(LANGUAGES, indent=4)}`"
             )
     elif util == "tts":
         scraper = "Text to Speech"
