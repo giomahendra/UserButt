@@ -18,15 +18,23 @@ async def corona(event):
     covid = Covid(source="worldometers")
     try:
         country_data = covid.get_status_by_country_name(country)
+        confirm = "{:,}".format(int(country_data['confirmed']))
+        active = "{:,}".format(int(country_data['active']))
+        deaths = "{:,}".format(int(country_data['deaths']))
+        recovered = "{:,}".format(int(country_data['recovered']))
+        newcases = "{:,}".format(int(country_data['new_cases']))
+        newdeaths = "{:,}".format(int(country_data['new_deaths']))
+        critical = "{:,}".format(int(country_data['critical']))
+        totaltests = "{:,}".format(int(country_data['total_tests']))
         output_text = (
-            f"`Confirmed   : {country_data['confirmed']}`\n" +
-            f"`Active      : {country_data['active']}`\n" +
-            f"`Deaths      : {country_data['deaths']}`\n" +
-            f"`Recovered   : {country_data['recovered']}`\n\n" +
-            f"`New Cases   : {country_data['new_cases']}`\n" +
-            f"`New Deaths  : {country_data['new_deaths']}`\n" +
-            f"`Critical    : {country_data['critical']}`\n" +
-            f"`Total Tests : {country_data['total_tests']}`\n\n" +
+            f"Confirmed   : {confirm}\n" +
+            f"Active      : {active}\n" +
+            f"Deaths      : {deaths}\n" +
+            f"Recovered   : {recovered}\n\n" +
+            f"New Cases   : {newcases}\n" +
+            f"New Deaths  : {newdeaths}\n" +
+            f"Critical    : {critical}\n" +
+            f"Total Tests : {totaltests}\n\n" +
             f"Data provided by [Worldometer](https://www.worldometers.info/coronavirus/country/{country})")
         await event.edit(f"Corona Virus Info in {country}:\n\n{output_text}")
     except ValueError:
