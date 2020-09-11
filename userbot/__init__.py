@@ -305,8 +305,6 @@ with bot:
                     link_preview=False,
                 )
             await event.answer([result] if result else None)
-            await asyncio.sleep(60)
-            await event.delete()
 
         @tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
