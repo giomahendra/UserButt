@@ -8,6 +8,7 @@
 
 import os
 import re
+import asyncio
 
 from sys import version_info
 from logging import basicConfig, getLogger, INFO, DEBUG
@@ -304,7 +305,7 @@ with bot:
                     link_preview=False,
                 )
             await event.answer([result] if result else None)
-            await sleep(60)
+            await asyncio.sleep(60)
             await event.delete()
 
         @tgbot.on(
