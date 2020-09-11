@@ -241,7 +241,7 @@ def paginate_help(page_number, loaded_modules, prefix):
                     "⬅️", data="{}_prev({})".format(prefix, modulo_page)
                 ),
                 custom.Button.inline(
-                    "➡️", data="{}_next})".format(prefix, modulo_page)
+                    "➡️", data="{}_next({})".format(prefix, modulo_page)
                 ),
             )
         ]
@@ -263,7 +263,7 @@ with bot:
         @tgbot.on(events.NewMessage(pattern="/start"))
         async def handler(event):
             if event.message.from_id != uid:
-                await event.reply("I'm [Trojans](https://github.com/gionahendra/userbutt) modules helper...\nplease make your own bot, don't use mine 😋")
+                await event.reply("I'm [Trojans](https://github.com/giomahendra/userbutt) modules helper...\nplease make your own bot, don't use mine 😋")
             else:
                 await event.reply(f"`Hey there {ALIVE_NAME}\n\nI work for you :)`")
 
@@ -272,10 +272,10 @@ with bot:
             builder = event.builder
             result = None
             query = event.text
-            if event.query.user_id == uid and query.startswith("@UsetButt"):
+            if event.query.user_id == uid and query.startswith("@trojansinbot"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.article(
-                    "Please Use Only With .help Command",
+                    "Please Use Only With help Command",
                     text="{}\nTotal loaded modules: {}".format(
                         "Trojans modules helper.\n",
                         len(dugmeler),
