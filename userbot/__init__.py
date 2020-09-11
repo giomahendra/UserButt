@@ -241,7 +241,7 @@ def paginate_help(page_number, loaded_modules, prefix):
                     "⬅️", data="{}_prev({})".format(prefix, modulo_page)
                 ),
                 custom.Button.inline(
-                    "➡️", data="{}_next({})".format(prefix, modulo_page)
+                    "➡️", data="{}_next})".format(prefix, modulo_page)
                 ),
             )
         ]
@@ -272,7 +272,7 @@ with bot:
             builder = event.builder
             result = None
             query = event.text
-            if event.query.user_id == uid and query.startswith("@Trojans"):
+            if event.query.user_id == uid and query.startswith("@UsetButt"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.article(
                     "Please Use Only With .help Command",
@@ -285,7 +285,7 @@ with bot:
                 )
             elif query.startswith("tb_btn"):
                 result = builder.article(
-                    "UserButt Helper",
+                    "Trojans Helper",
                     text="List of Modules",
                     buttons=[],
                     link_preview=True)
