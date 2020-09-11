@@ -284,7 +284,7 @@ with bot:
                 )
             elif query.startswith("tb_btn"):
                 result = builder.article(
-                    "Trojans",
+                    "Commands",
                     text="List of Modules",
                     buttons=[],
                     link_preview=True)
