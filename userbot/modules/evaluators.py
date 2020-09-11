@@ -65,7 +65,6 @@ async def evaluate(query):
 @register(outgoing=True, pattern=r"^\.exec(?: |$|\n)([\s\S]*)")
 async def run(run_q):
     """For .exec command, which executes the dynamically created program"""
-    import requests, json
     code = run_q.pattern_match.group(1)
 
     if run_q.is_channel and not run_q.is_group:
@@ -73,14 +72,16 @@ async def run(run_q):
 
     if not code:
         return await run_q.edit("``` At least a variable is required to"
-                                "execute. Use .help exec for an example.```")
+                                "execute. Use help exec for an example.```")
 
     if code in ("userbot.session", "config.env"):
         return await run_q.edit("`That's a dangerous operation! Not Permitted!`")
 
     if len(code.splitlines()) <= 5:
+        import requests, json
         codepre = code
     else:
+        import requests, json
         clines = code.splitlines()
         codepre = clines[0] + "\n" + clines[1] + "\n" + clines[2] + \
             "\n" + clines[3] + "..."
