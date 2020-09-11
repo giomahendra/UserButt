@@ -36,7 +36,7 @@ async def corona(event):
             f"`Critical    : {critical}`\n" +
             f"`Total Tests : {totaltests}`\n\n" +
             f"`Data provided by` [Worldometer](https://www.worldometers.info/coronavirus/country/{country})")
-        await event.edit(f"`Corona Virus Info in {country}`:\n\n{output_text}")
+        await event.edit(f"`Corona Virus Info in {country} :`\n\n{output_text}")
     except ValueError:
         await event.edit(f"No information found for: {country}!")
 
