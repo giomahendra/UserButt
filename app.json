@@ -16,17 +16,17 @@
   "env": {
     "API_KEY": {
       "description": "Get this value from my.telegram.org.",
-      "value": "1455158",
+      "value": " ",
       "required": true
     },
     "API_HASH": {
       "description": "Get this value from my.telegram.org.",
-      "value": "580236d423c8bb2c48e6512432f20361",
+      "value": " ",
       "required": true
     },
     "STRING_SESSION": {
       "description": "Get this value by running [python3 string_session.py] in Termux or local system.",
-      "value": "1BVtsOKsBu5Bcn62qfziXL8UVrS7eK_DO15-uaDceoBpa9xjtKjlI8-s_uS-VKVYvXvlAgRyWBASGZ8brsxPR6ikkiApGegSPfkcwTmaWaampE8QHsGgfM20KqTWjngLWhU9nNDjTSt6sS6BPUcW9iUrkA3UeyLEHIE-MU3avKO69be5mwnpBqASlyL-bwLRWX4odgfUwzTdB3VrpQs1GIQQYibP9bW3_LyZ-vTthF3wz2w7C0EnKm8-w93Kbc08MStlcsfMnLx2EFMO48yRMAQC7lChS-pf3RTLfuh_egpxv0JeNFvWtv25z5s0J8PGZm-f2HI7XC97_zzq3tcomOhNIXTviymg=",
+      "value": " ",
       "required": true
     },
     "HEROKU_MEMEZ": {
@@ -36,11 +36,11 @@
     },
     "HEROKU_API_KEY": {
       "description": "Your Heroku API key, get it from 'https://dashboard.heroku.com/account'",
-      "value": "0d2cabd6-0881-4655-9afb-348582e80810"
+      "value": " "
     },
     "HEROKU_APP_NAME": {
       "description": "Enter the Heroku app name here (Must an exact same name with your input above). It helps with userbot updates.",
-      "value": "trojans-tele",
+      "value": " ",
       "required": false
     },
     "UPSTREAM_REPO_URL": {
@@ -70,7 +70,7 @@
     },
     "OPEN_WEATHER_MAP_APPID": {
       "description": "Get your own APPID (API key)from https://api.openweathermap.org/data/2.5/weather",
-      "value": "9fd178c4deb2326b72a3889c99e9704f",
+      "value": " ",
       "required": false
     },
     "BOTLOG": {
@@ -79,7 +79,7 @@
     },
     "BOTLOG_CHATID": {
       "description": "ChatID of the Log group. Create a Group > add a bot e.g. @MissRose_bot > Promote bot > type /id.",
-      "value": "-497601959"
+      "value": " "
     },
     "CONSOLE_LOGGER_VERBOSE": {
       "description": "If you need verbosity on the console logging",
@@ -119,27 +119,27 @@
     },
     "LASTFM_API": {
       "description": "API Key for Last.FM module. [Get one from - https://www.last.fm/api/account/create]",
-      "value": "5160ce3cca0e8bb3f100e4e25dfc3b06",
+      "value": " ",
       "required": false
     },
     "LASTFM_SECRET": {
       "description": "SECRET Key for Last.FM module. [Get one from - https://www.last.fm/api/account/create]",
-      "value": "b133d9af867e240bee77f099aa95fea3",
+      "value": " ",
       "required": false
     },
     "LASTFM_USERNAME": {
       "description": "Last.FM Username",
-      "value": "trojansbot",
+      "value": " ",
       "required": false
     },
     "LASTFM_PASSWORD": {
       "description": "Last.FM Password",
-      "value": "Gio.07101996",
+      "value": " ",
       "required": false
     },
     "BIO_PREFIX": {
       "description": "Prefix for Last.FM Module Bio.",
-      "value": "Trojans Last.fm",
+      "value": " ",
       "required": false
     },
     "DEFAULT_BIO": {
@@ -149,7 +149,7 @@
     },
     "ALIVE_NAME": {
       "description": "Name to show in .alive message",
-      "value": "STOPPED WORKING !",
+      "value": " ",
       "required": false
     },
     "G_DRIVE_CLIENT_SECRET": {
@@ -166,22 +166,22 @@
     },
     "WEATHER_DEFCITY": {
       "description": "Set the default city for the userbot's weather module.",
-      "value": "Jakarta",
+      "value": " ",
       "required": false
     }, 
     "GIT_REPO_NAME": {
       "description": "Set the repo for the gitupload module.",
-      "value": "https://github.com/giomahendra/UserButt/",
+      "value": " ",
       "required": false
     },
     "GITHUB_ACCESS_TOKEN": {
       "description": "Set this in order to make the gitupload work. you can look https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line to assist you.",
-      "value": "69286425e09e1c1babb4a508159e5ad857bf77f8",
+      "value": " ",
       "required": false
     },
     "GENIUS_API_TOKEN": {
       "description": "Get this value from https://genius.com/developers.",
-      "value": "oYhWPWLwRjfEZvHsnel7hA6cb4ALZsJFf07hjp0aAx1DxfGiJIjxwtvVA0m4qmmg",
+      "value": " ",
       "required": false 
     },
     "TERM_ALIAS": {
