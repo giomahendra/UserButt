@@ -87,7 +87,7 @@ GENIUS = os.environ.get("GENIUS_API_TOKEN") or None
 
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = (os.environ.get("UPSTREAM_REPO_URL")
-                     or "https://github.com/KeselekPermen69/UserButt.git")
+                     or "https://github.com/giomahendra/UserButt.git")
 UPSTREAM_REPO_BRANCH = os.environ.get("UPSTREAM_REPO_BRANCH") or "sql-extended"
 
 # Console verbose logging
@@ -272,7 +272,7 @@ with bot:
             builder = event.builder
             result = None
             query = event.text
-            if event.query.user_id == uid and query.startswith("@stoppedworking"):
+            if event.query.user_id == uid and query.startswith("@UserButt"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.article(
                     "Please Use Only With help Command",
@@ -285,7 +285,7 @@ with bot:
                 )
             elif query.startswith("tb_btn"):
                 result = builder.article(
-                    "Trojans Helper",
+                    "UserButt Helper",
                     text="List of Modules",
                     buttons=[],
                     link_preview=True)
