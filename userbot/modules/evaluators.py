@@ -78,10 +78,8 @@ async def run(run_q):
         return await run_q.edit("`That's a dangerous operation! Not Permitted!`")
 
     if len(code.splitlines()) <= 5:
-        import requests, json
         codepre = code
     else:
-        import requests, json
         clines = code.splitlines()
         codepre = clines[0] + "\n" + clines[1] + "\n" + clines[2] + \
             "\n" + clines[3] + "..."
