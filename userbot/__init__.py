@@ -272,7 +272,7 @@ with bot:
             builder = event.builder
             result = None
             query = event.text
-            if event.query.user_id == uid and query.startswith("@Trojans"):
+            if event.query.user_id == uid and query.startswith("@stoppedworking"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.article(
                     "Please Use Only With help Command",
