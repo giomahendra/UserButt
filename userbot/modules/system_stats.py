@@ -180,8 +180,8 @@ async def bot_ver(event):
                 + str(stderr.decode().strip())
 
         await event.edit(
-                         f"`Revision               : {revout}`\n"
-                         f"`Latest commit   : {comout}`"
+                         f"`Revision        : {revout}`\n"
+                         f"`Latest commit   : {comout}`\n"
                          f"`Userbot Version : {verout}`\n")
     else:
         await event.edit(
