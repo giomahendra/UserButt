@@ -107,14 +107,19 @@ async def run(run_q):
             )
             remove("output.txt")
             return
-        await run_q.client.send_message(BOTLOG_CHATID, "**Query: **\n`"
-                         f"{codepre}\n"
-                         "`\n**Result: **\n`"
+        await run_q.client.send_message(BOTLOG_CHATID,
+                         "`**Result: **\n`"
                          f"{result}"
                          "`")
+#                         "**Query: **\n`"
+#                         f"{codepre}\n"
+#                         "`\n**Result: **\n`"
+#                         f"{result}"
+#                         "`")
     else:
         await run_q.edit(
-            "**Query: **\n`" f"{codepre}" "`\n**Result: **\n`No result returned/False`"
+            "**Result: **\n`No result returned/False`"
+#            "**Query: **\n`" f"{codepre}" "`\n**Result: **\n`No result returned/False`"
         )
 
 #    if BOTLOG:
