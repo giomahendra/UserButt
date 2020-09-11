@@ -27,15 +27,15 @@ async def corona(event):
         critical = "{:,}".format(int(country_data['critical']))
         totaltests = "{:,}".format(int(country_data['total_tests']))
         output_text = (
-            f"Confirmed   : {confirm}\n" +
-            f"Active      : {active}\n" +
-            f"Deaths      : {deaths}\n" +
-            f"Recovered   : {recovered}\n\n" +
-            f"New Cases   : {newcases}\n" +
-            f"New Deaths  : {newdeaths}\n" +
-            f"Critical    : {critical}\n" +
-            f"Total Tests : {totaltests}\n\n" +
-            f"Data provided by [Worldometer](https://www.worldometers.info/coronavirus/country/{country})")
+            f"`Confirmed   : {confirm}`\n" +
+            f"`Active      : {active}`\n" +
+            f"`Deaths      : {deaths}`\n" +
+            f"`Recovered   : {recovered}`\n\n" +
+            f"`New Cases   : {newcases}`\n" +
+            f"`New Deaths  : {newdeaths}`\n" +
+            f"`Critical    : {critical}`\n" +
+            f"`Total Tests : {totaltests}`\n\n" +
+            f"`Data provided by [Worldometer](https://www.worldometers.info/coronavirus/country/{country})`")
         await event.edit(f"Corona Virus Info in {country}:\n\n{output_text}")
     except ValueError:
         await event.edit(f"No information found for: {country}!")
