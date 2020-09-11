@@ -13,6 +13,30 @@ from userbot import CMD_HELP
 from userbot.events import register
 import time
 
+programStart = time.time()
+
+def runtime(secs):
+    mins, secs = divmod(secs,60)
+    hours, mins = divmod(mins,60)
+    days, hours = divmod(hours,24)
+    weeks, days = divmod(days,7)
+    months, weeks = divmod(weeks,4)
+    text = ""
+    if months != 0: text += "%02d Months" % (months)
+    if weeks != 0: text += " %02d Weeks" % (weeks)
+    if days != 0: text += " %02d Days" % (days)
+    if hours !=  0: text +=  " %02d Hours" % (hours)
+    if mins != 0: text += " %02d Minutes" % (mins)
+    if secs != 0: text += " %02d Seconds" % (secs)
+    if text[0] == " ":
+        text = text[1:]
+    return text
+
+@register(outgoing=True, pattern="^.runtime$")
+async def speed(rt):
+    await rt.edit("`Checking program running. . .`")
+    eltime = time.time() - programStart
+    await rt.edit("`⋄ Runtime :\n   ☣️ %s`" % (runtime(eltime)))
 
 @register(outgoing=True, pattern="^.sp$")
 async def speed(sp):
@@ -79,6 +103,9 @@ async def pingme(pong):
     await pong.edit("`Pong!\n%sms`" % (duration))
 
 
+CMD_HELP.update({
+    "runtime": "`.runtime`"
+    "\nUsage: Checks the long duration of the running program and shows the results."})
 CMD_HELP.update({
     "sp": "`.sp`"
     "\nUsage: Does a speedtest sendMessage and shows the results."})
