@@ -276,10 +276,10 @@ with bot:
                 buttons = paginate_help(0, dugmeler, "help")
                 result = builder.article(
                     "Please Use Only With help Command",
-                    text="{}\nTotal loaded modules: {}".format(
-                        "Trojans modules helper.\n",
-                        len(dugmeler),
-                    ),
+#                    text="{}\nTotal loaded modules: {}".format(
+#                        "Trojans modules helper.\n",
+#                        len(dugmeler),
+#                    ),
                     buttons=buttons,
                     link_preview=False,
                 )
